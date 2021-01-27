@@ -1,6 +1,11 @@
 from flask import Flask,render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy 
 from flask_cors import CORS
+import string
+import random
+
+def id_generator(size=6, chars=string.ascii_lowercase + string.digits):
+        return ''.join(random.choice(chars) for _ in range(size))
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
@@ -26,7 +31,8 @@ def results():
         db.session.commit()
         check = URLs.query.all()
         id = URLs.query.filter_by(long_url=user_url).first().id
-        newURL = f'http://127.0.0.1:5000/{id}'
+        random_string = id_generator()
+        newURL = f'https://{random_string}/{id}'
         return render_template('results.html', user_url=user_url, new_url=newURL)
     else:
         return render_template('results.html', user_url='somestring')
