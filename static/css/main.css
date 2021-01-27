@@ -1,0 +1,108 @@
+body {
+    padding-top: 60px;
+    background-color: #373d58;
+    font-family: Proximanova,sans-serif;
+    color: #212732;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.form-link-creation-input {
+    height: 50px;
+    margin-bottom: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border: 1px solid rgba(175,185,197,.36);
+    border-radius: 4px;
+    background-color: #fff;
+    color: #161c34;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.w-input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-left: 5px;
+}
+
+.btn-primary-3 {
+    padding: 11px 30px;    
+    background-color: #2281c2;
+    color: #fff;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.w-button {
+    padding: 9px 15px;
+    margin-left: 15px;
+    background-color: #3898ec;
+    color: #fff;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 38px
+}
+
+.form-small-pad {
+    background: #28384a;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.form {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+}
+.section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    flex-direction: column;
+    align-items: center;
+    background-color: #373d58;
+}
+.section {
+    display: flex;
+    justify-content: center;
+}
+.shorten-section {
+    position: relative;
+    margin: 0 auto;
+}
+
+#res {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+p {
+    /* color: white; */
+    background-color: white;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.magic-result {
+    margin-top: 80px;
+}

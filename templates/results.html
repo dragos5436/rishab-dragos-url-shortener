@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </title>
-</head>
-<body>
-    <main>
-        <p>Your old URL is {{user_url}}</p>
-        <p>Your New URL is <a href={{new_url}}>{{new_url}}</a></p>
+{% extends "index.html" %}
+
+{% block content %}
+    <main class="magic-result">
+        <p>Initial URL: <a href={{user_url}}>{{user_url}}</a></p>
+        <br><br>
+        <p>Shortened URL: <a href={{new_url}}>{{new_url}}</a></p>
     </main>
-    <footer>
-    </footer>
-</body>
-</html>
+{% endblock %}
